@@ -42,7 +42,7 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
    
    **Option 2: Using custom `N` and `e` values**
    ```bash
-   python RALU_inference.py --N 4 5 6 --e 0.3 0.45 1.0
+   python RALU_inference.py --N 4 5 6 --e 0.3 0.45 1.0   # for N=[4, 5, 6], e=[0.3, 0.45, 1.0]
    ```
    > **Note**: The last value of e must always be 1.0, indicating the end of the diffusion process.
 
