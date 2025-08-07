@@ -10,7 +10,7 @@
 
 This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-free framework for accelerating Diffusion Transformers along the spatial dimension. RALU selectively upsamples only edge-sensitive regions during denoising to suppress artifacts, while preserving the model’s semantic fidelity and visual quality. It further introduces a noise-timestep rescheduling strategy to ensure stable generation across resolution transitions, making it compatible with temporal acceleration methods.
 
-<img src="figs/overall_framework.png" width="1000">
+<img src="figs/overall_framework.png"dfidth="1000">
 
 ## 🔥 Recent News
 
