@@ -44,7 +44,7 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
 
 The images below compare the results of applying 4× and 7× acceleration using naive reduction of `num_inference_steps` in **FLUX.1-dev** vs. using **RALU** with the same speedup factors.
 
-<img src="figs\cat_kitten.png" width="800"
+<img src="figs\cat_kitten.png" width="800">
 
 ## 🙏 Acknowledgments
 
