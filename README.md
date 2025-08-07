@@ -8,4 +8,47 @@
 >
 > 📚[arXiv](https://arxiv.org/abs/2507.08422)
 
-The code will be released soon. Stay tuned!
+This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-free framework for accelerating Diffusion Transformers along the spatial dimension. RALU selectively upsamples only edge-sensitive regions during denoising to suppress artifacts, while preserving the model’s semantic fidelity and visual quality. It further introduces a noise-timestep rescheduling strategy to ensure stable generation across resolution transitions, making it compatible with temporal acceleration methods.
+
+<img src="figs/overall_framework.png" width="1000">
+
+## 🚀 Usage
+
+1. **Environment Setup**
+  Make sure your environment is capable of running FLUX. No additional requirements are needed beyond that.
+  
+2. **Configure Parameters**
+
+   - `use_RALU_default`: Use the predefined configurations (4× or 7× speedup) as described in the RALU paper.
+   - `level`: When using `--use_RALU_default`, specify the desired acceleration level (either 4 or 7).
+   - `N`: A list of denoising step counts for each of the three stages.
+   - `e`: A list of end timesteps for each stage. The last value **must be** `1.0`, as it denotes the final timestep.
+   - `up_ratio`:  The ratio of tokens to be early upsampled in **Stage 2**.
+
+4. **Run the Example**
+
+   Execute the RALU_inference.py script.
+   **Option 1: Using the default RALU setting (4× or 7× speedup)**
+   ```bash
+   python RALU_inference.py --use_RALU_default --level 4
+   ```
+   
+   **Option 2: Using custom `N` and `e` values**
+   ```bash
+   python RALU_inference.py --N 3 5 6 --e 0.3 0.5 1.0
+   ```
+   > **Note**: The last value of e must always be 1.0, indicating the end of the diffusion process.
+
+
+## 📸 Example Outputs
+
+The images below compare the results of applying 4× and 7× acceleration using naive reduction of `num_inference_steps` in **FLUX.1-dev** vs. using **RALU** with the same speedup factors.
+
+<img src="figs\cat_kitten.png" width="1000">
+
+## 🙏 Acknowledgments
+
+This code is based on the `FLUX pipeline` implementation provided by Diffusers. The referenced works are as follows:
+
+- [🤗 Diffusers](https://github.com/huggingface/diffusers)
+- [FLUX](https://github.com/black-forest-labs/flux.git)
