@@ -12,9 +12,15 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
 
 <img src="figs/overall_framework.png" width="1000">
 
+## 🔥 Recent News
+
+   - [2025.08.07] RALU code has been released.
+   - [2025.07.11] [RALU](https://arxiv.org/abs/2507.08422) is on arXiv.
+
 ## 🚀 Usage
 
 1. **Environment Setup**
+
   Make sure your environment is capable of running FLUX. No additional requirements are needed beyond that.
   
 2. **Configure Parameters**
@@ -28,6 +34,7 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
 4. **Run the Example**
 
    Execute the RALU_inference.py script.
+   
    **Option 1: Using the default RALU setting (4× or 7× speedup)**
    ```bash
    python RALU_inference.py --use_RALU_default --level 4
@@ -35,7 +42,7 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
    
    **Option 2: Using custom `N` and `e` values**
    ```bash
-   python RALU_inference.py --N 3 5 6 --e 0.3 0.5 1.0
+   python RALU_inference.py --N 4 5 6 --e 0.3 0.45 1.0
    ```
    > **Note**: The last value of e must always be 1.0, indicating the end of the diffusion process.
 
@@ -44,7 +51,7 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
 
 The images below compare the results of applying 4× and 7× acceleration using naive reduction of `num_inference_steps` in **FLUX.1-dev** vs. using **RALU** with the same speedup factors.
 
-<img src="figs\cat_kitten.png" width="800">
+<img src="figs\puppy_kitten.png" width="700">
 
 ## 🙏 Acknowledgments
 
