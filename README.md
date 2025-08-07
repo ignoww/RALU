@@ -21,7 +21,7 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
 
 1. **Environment Setup**
 
-  Make sure your environment is capable of running FLUX. No additional requirements are needed beyond that.
+   Make sure your environment is capable of running **FLUX**. No additional requirements are needed beyond that.
   
 2. **Configure Parameters**
 
