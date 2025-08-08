@@ -44,14 +44,14 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
    ```bash
    python RALU_inference.py --N 4 5 6 --e 0.3 0.45 1.0   # for N=[4, 5, 6], e=[0.3, 0.45, 1.0]
    ```
-   > **Note**: The last value of e must always be 1.0, indicating the end of the diffusion process.
+   > **Note**: The last value of `e` must always be 1.0, indicating the end of the diffusion process.
 
 
 ## 📸 Example Outputs
 
 The images below compare the results of applying 4× and 7× acceleration using naive reduction of `num_inference_steps` in **FLUX.1-dev** vs. using **RALU** with the same speedup factors.
 
-<img src="figs\puppy_kitten.png" width="700">
+<img src="figs\puppy_kitten.png" width="800">
 
 ## 🙏 Acknowledgments
 
