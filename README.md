@@ -1,8 +1,8 @@
-# 🌟 [arXiv] Upsample What Matters: Region-Adaptive Latent Sampling for Accelerated Diffusion Transformers
+# 🌟 [CVPR 2026] Training-free Mixed-Resolution Latent Upsampling for Spatially Accelerated Diffusion Transformers
 
 ## 📑 Introduction
 
-> **Upsample What Matters: Region-Adaptive Latent Sampling for Accelerated Diffusion Transformers**
+> **Training-free Mixed-Resolution Latent Upsampling for Spatially Accelerated Diffusion Transformers**
 >
 > [Wongi Jeong*](https://ignoww.github.io), [Kyungryeol Lee*](https://krlee1.github.io/), [Hoigi Seo](https://seohoiki3215.github.io/), [Se Young Chun](https://icl.snu.ac.kr/) (*co-first)
 >
@@ -14,6 +14,7 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
 
 ## 🔥 Recent News
 
+   - [2026.02.20] RALU is accepted at **CVPR 2026** !!
    - [2025.08.07] RALU code has been released.
    - [2025.07.11] [RALU](https://arxiv.org/abs/2507.08422) is on arXiv.
 
