@@ -14,6 +14,7 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
 
 ## 🔥 Recent News
 
+   - [2026.04.09] RALU is selected as a **Highlight** paper at **CVPR 2026** !! 🔥🔥
    - [2026.02.20] RALU is accepted at **CVPR 2026** !!
    - [2025.08.07] RALU code has been released.
    - [2025.07.11] [RALU](https://arxiv.org/abs/2507.08422) is on arXiv.
