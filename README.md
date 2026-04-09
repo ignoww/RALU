@@ -1,4 +1,4 @@
-# 🌟 [CVPR 2026] Training-free Mixed-Resolution Latent Upsampling for Spatially Accelerated Diffusion Transformers
+# 🌟 [CVPR 2026 Highlight🔥] Training-free Mixed-Resolution Latent Upsampling for Spatially Accelerated Diffusion Transformers
 
 ## 📑 Introduction
 
