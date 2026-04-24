@@ -50,6 +50,13 @@ class FluxPipeline_RALU(FluxPipeline):
                 Z = 6.317 # Z = 1/sqrt(c)
                 up_ratio = 0.3
                 
+            elif level == 5:
+                N = [4, 5, 6] # 5x
+                shift = [5.115, 2.642, 2.254]
+                e = [0.3, 0.45, 1.0]
+                Z = [7.522, 7.522]
+                up_ratio = 0.2
+    
             elif level == 7:
                 N = [2, 3, 5] # 7x
                 e = [0.2, 0.3, 1.0]
