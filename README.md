@@ -27,8 +27,8 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
    
    **Configure Parameters**
 
-   - `use_RALU_default`: Use the predefined configurations (4× or 7× speedup) as described in the RALU paper.
-   - `level`: When using `--use_RALU_default`, specify the desired acceleration level (either 4 or 7).
+   - `use_RALU_default`: Use the predefined configurations (5× or 7× speedup) as described in the RALU paper.
+   - `level`: When using `--use_RALU_default`, specify the desired acceleration level (either 5 or 7).
    - `N`: A list of denoising step counts for each of the three stages.
    - `e`: A list of end timesteps for each stage. The last value **must be** `1.0`, as it denotes the final timestep.
    - `up_ratio`:  The ratio of tokens to be early upsampled in **Stage 2**.
@@ -37,9 +37,9 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
 
    Execute the RALU_inference.py script.
    
-   **Option 1: Using the default RALU setting (4× or 7× speedup)**
+   **Option 1: Using the default RALU setting (5× or 7× speedup)**
    ```bash
-   python RALU_inference.py --use_RALU_default --level 4
+   python RALU_inference.py --use_RALU_default --level 5
    ```
    
    **Option 2: Using custom `N` and `e` values**
@@ -51,7 +51,7 @@ This paper proposes **Region-Adaptive Latent Upsampling (RALU)**, a training-fre
 
 ## 📸 Example Outputs
 
-The images below compare the results of applying 4× and 7× acceleration using naive reduction of `num_inference_steps` in **FLUX.1-dev** vs. using **RALU** with the same speedup factors.
+The images below compare the results of applying 5× and 7× acceleration using naive reduction of `num_inference_steps` in **FLUX.1-dev** vs. using **RALU** with the same speedup factors.
 
 <img src="figs\puppy_kitten.png" width="800">
 
